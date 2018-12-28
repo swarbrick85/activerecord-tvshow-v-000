@@ -15,4 +15,8 @@ class Show < ActiveRecord::Base
   def self.least_popular_show
     ((self.all.sort_by { |show| show.rating})[0])
   end 
+  
+  def self.ratings_sum 
+    
+  end 
 end 
