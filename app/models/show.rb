@@ -31,6 +31,6 @@ class Show < ActiveRecord::Base
   end 
   
   def shows_by_alphabetical_order 
-    
+    self.all.sort_by { |show| show.name }
   end 
 end 
