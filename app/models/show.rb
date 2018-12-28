@@ -30,7 +30,7 @@ class Show < ActiveRecord::Base
     popular 
   end 
   
-  def shows_by_alphabetical_order 
+  def self.shows_by_alphabetical_order 
     self.all.sort_by { |show| show.name }
   end 
 end 
