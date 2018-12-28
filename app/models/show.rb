@@ -11,4 +11,8 @@ class Show < ActiveRecord::Base
   def self.lowest_rating
     ((self.all.sort_by { |show| show.rating})[0]).rating
   end 
+  
+  def self.least_popular_show
+    ((self.all.sort_by { |show| show.rating})[0])
+  end 
 end 
